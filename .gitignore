@@ -1,0 +1,9 @@
+.idea/
+node_modules/
+vendor/
+/vendor/
+.*
+
+# whitelist
+!.gitignore
+!.php_cs
