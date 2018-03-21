@@ -1,7 +1,6 @@
 {
     "name": "towa/towa-fields",
     "description": "ACF Fields",
-    "version": "2.0.2",
     "authors": [
         {
             "name": "David Seidl",
