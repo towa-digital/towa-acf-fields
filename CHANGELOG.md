@@ -1,6 +1,12 @@
 # Changelog
 
-## [1.0.2] - 21.03.2018
+## [1.0.3] - 20.03.2018
+
+### Updated
+
++ package name for composer
+
+## [1.0.2] - 20.03.2018
 
 ### Removed
 
@@ -12,6 +18,7 @@
 
 + from bitbucket to github ( going opensource :muscle: :heart_eyes: )
 
+[1.0.3]: https://github.com/towa-digital/towa-acf-fields/releases/tag/1.0.3
 [1.0.2]: https://github.com/towa-digital/towa-acf-fields/releases/tag/1.0.2
 [1.0.1]: https://github.com/towa-digital/towa-acf-fields/releases/tag/1.0.1
 [1.0.0]: https://github.com/towa-digital/towa-acf-fields/releases/tag/1.0.0
