@@ -1,5 +1,6 @@
 {
     "name": "towa/towa-fields",
+    "license": "MIT",
     "description": "ACF Fields",
     "version": "2.0.2",
     "authors": [
