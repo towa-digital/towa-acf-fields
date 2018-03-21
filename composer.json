@@ -1,7 +1,7 @@
 {
-    "name": "towa/towa-fields",
+    "name": "towa/towa-acf-fields",
     "license": "MIT",
-    "description": "ACF Fields",
+    "description": "ACF Fields Developer SDK",
     "authors": [
         {
             "name": "David Seidl",
