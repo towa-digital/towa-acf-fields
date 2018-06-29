@@ -2,10 +2,10 @@
 
 ## Overview
 
-+ Current Stable Release: [1.0.3]
++ Current Stable Release: [v1.1.0]
 
 ## Documentation
 
 Shortly, there will be a full documentation how to use this library.
 
-[1.0.3]: https://github.com/towa-digital/towa-acf-fields/releases/tag/1.0.3
+[v1.1.0]: https://github.com/towa-digital/towa-acf-fields/releases/tag/v1.1.0
