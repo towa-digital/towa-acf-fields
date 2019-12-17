@@ -1,28 +1,34 @@
 # Changelog
 
+## [unreleased]
+
+### Fixed
+
+- missing return statement for completing the fluent-interface-design
+
 ## [v1.1.0]
 
 ### Added
 
-+ field buttongroup
+- field buttongroup
 
 ## [1.0.3]
 
 ### Updated
 
-+ package name for composer
+- package name for composer
 
 ## [1.0.2]
 
 ### Removed
 
-+ version tag from composer, so packagist can resolve tags
+- version tag from composer, so packagist can resolve tags
 
 ## [1.0.1]
 
 ### Moved
 
-+ from bitbucket to github ( going opensource :muscle: :heart_eyes: )
+- from bitbucket to github ( going opensource :muscle: :heart_eyes: )
 
 [v1.1.0]: https://github.com/towa-digital/towa-acf-fields/releases/tag/v1.1.0
 [1.0.3]: https://github.com/towa-digital/towa-acf-fields/releases/tag/1.0.3
