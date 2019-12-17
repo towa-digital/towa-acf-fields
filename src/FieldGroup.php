@@ -74,6 +74,8 @@ class FieldGroup
     public function for_location( $rule )
     {
         $this->data[ 'location' ][] = $rule;
+
+        return $this;
     }
 
     public function set_fields($fields)
