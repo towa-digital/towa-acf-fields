@@ -1,0 +1,14 @@
+version: 2
+updates:
+- package-ecosystem: composer
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: friendsofphp/php-cs-fixer
+    versions:
+    - 2.18.2
+    - 2.18.3
+    - 2.18.4
+    - 2.18.5
