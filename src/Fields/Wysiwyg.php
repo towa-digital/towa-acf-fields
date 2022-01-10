@@ -31,6 +31,7 @@ class Wysiwyg extends BaseField
             'tabs' => 'all',
             'toolbar' => 'full',
             'media_upload'  => 0,
+            'wpml_cf_preferences' => 2,
         ];
 
         return parent::build(array_merge((array) $add_to_defaults, (array) $parameter));

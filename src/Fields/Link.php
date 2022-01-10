@@ -13,7 +13,10 @@ class Link extends BaseField
 
     public function build(array $parameter = [])
     {
-        $default = [ 'return_format' => 'array' ];
+        $default = [
+            'return_format' => 'array',
+            'wpml_cf_preferences' => 2,
+        ];
 
         return parent::build(array_merge($default, $parameter));
     }

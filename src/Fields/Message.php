@@ -21,4 +21,18 @@ class Message extends BaseField
     protected $name = 'message';
     protected $label = 'Message';
     protected $type = 'message';
+
+    /**
+     * @param array  $parameter
+     *
+     * @return array
+     */
+    public function build(array $parameter = [])
+    {
+        $add_to_defaults = [
+            'wpml_cf_preferences' => 2,
+        ];
+
+        return parent::build(array_merge((array) $add_to_defaults, (array) $parameter));
+    }
 }

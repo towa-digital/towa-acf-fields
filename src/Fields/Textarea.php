@@ -29,6 +29,7 @@ class Textarea extends BaseField
     {
         $add_to_defaults = [
             'new_lines' => 'br',
+            'wpml_cf_preferences' => 2,
         ];
 
         return parent::build(array_merge((array) $add_to_defaults, (array) $parameter));

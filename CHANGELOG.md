@@ -1,5 +1,11 @@
 # Changelog
 
+# [unreleased]
+
+### Added
+
+- enabled translation of towa acf base fields
+
 ## [v1.1.1] - 17.12.2019
 
 ### Fixed
