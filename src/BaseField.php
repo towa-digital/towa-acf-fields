@@ -19,6 +19,7 @@ class BaseField
     protected $name;
     protected $label;
     private static $search_keys;
+    private $wpml_preference;
 
     /**
      * Image constructor.
@@ -41,7 +42,7 @@ class BaseField
 
     /**
      * $parameter to override
-
+     *
      * @param array  $parameter
      *
      * @return array
@@ -53,6 +54,7 @@ class BaseField
             'label' => $this->get_label(),
             'name'  => $this->get_name(),
             'type'  => $this->type,
+            'wpml_cf_preferences' => $this->get_wpml_translation_preference(),
         ];
 
         return array_merge((array) $defaults, (array) $parameter);
@@ -138,5 +140,28 @@ class BaseField
     public static function get_search_keys()
     {
         return self::$search_keys;
+    }
+
+    /**
+     * @return number
+     */
+    public function get_wpml_translation_preference()
+    {
+        return $this->wpml_preference ? $this->wpml_preference : 2;
+    }
+
+    /**
+     * ACFML wpml_cf_preferences possible values:
+     *  null = 'no translation'
+     *  0 => 'copy'
+     *  1 => 'copy once'
+     *  2 => 'translate
+     *
+     * Default Value is set to 2, so any towa-acf will be translatable
+     * @return number
+     */
+    public function set_wpml_translation_preference($value)
+    {
+        $this->wpml_preference = $value;
     }
 }
