@@ -1,11 +1,8 @@
 <?php
-/**
- * Created by TOWA.
- * User: dseidl
- * Date: 01/08/16
- */
 
 namespace Towa\Acf;
+
+use Towa\Acf\Fields\Helper\AcfWpmlHelper;
 
 /**
  * Class AcfField
@@ -57,7 +54,7 @@ class BaseField
             'wpml_cf_preferences' => $this->get_wpml_translation_preference(),
         ];
 
-        return array_merge((array) $defaults, (array) $parameter);
+        return array_merge($defaults, $parameter);
     }
 
 
@@ -120,8 +117,6 @@ class BaseField
      */
     private function add_as_search_key()
     {
-
-        //init
         if (empty(self::$search_keys)) {
             self::$search_keys = [];
         }
@@ -147,17 +142,12 @@ class BaseField
      */
     public function get_wpml_translation_preference()
     {
-        return $this->wpml_preference ? $this->wpml_preference : 2;
+        return $this->wpml_preference ? $this->wpml_preference : AcfWpmlHelper::TRANSLATE;
     }
 
     /**
-     * ACFML wpml_cf_preferences possible values:
-     *  null = 'no translation'
-     *  0 => 'copy'
-     *  1 => 'copy once'
-     *  2 => 'translate
+     * ACFML wpml_cf_preferences. Use the AcfWpmlHelper-Class to assign a value
      *
-     * Default Value is set to 2, so any towa-acf will be translatable
      * @return number
      */
     public function set_wpml_translation_preference($value)
