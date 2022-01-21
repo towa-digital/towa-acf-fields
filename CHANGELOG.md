@@ -1,10 +1,15 @@
 # Changelog
 
-# [unreleased]
+## [unreleased]
 
 ### Added
 
 - enabled translation of towa acf base fields
+
+### Removed
+
+- unused/irrelevant comments
+- `UseH1` module
 
 ## [v1.1.1] - 17.12.2019
 
