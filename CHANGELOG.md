@@ -5,6 +5,7 @@
 ### Added
 
 - enabled translation of towa acf base fields
+- added missing clone field
 
 ### Removed
 
@@ -41,6 +42,7 @@
 
 - from bitbucket to github ( going opensource :muscle: :heart_eyes: )
 
+[v1.1.1]: https://github.com/towa-digital/towa-acf-fields/releases/tag/v1.1.1
 [v1.1.0]: https://github.com/towa-digital/towa-acf-fields/releases/tag/v1.1.0
 [1.0.3]: https://github.com/towa-digital/towa-acf-fields/releases/tag/1.0.3
 [1.0.2]: https://github.com/towa-digital/towa-acf-fields/releases/tag/1.0.2
