@@ -1,23 +1,9 @@
 <?php
-/**
- * Created by TOWA.
- * User: dseidl
- * Date: 08/08/16
- *
- * UPDATE: 25/08/16
- * User: patrick
- * COMMENT: added parent class
- */
 
 namespace Towa\Acf\Fields;
 
 use Towa\Acf\BaseField;
 
-/**
- * Class PostObject
- *
- * @package towa\acf\fields
- */
 class Select extends BaseField
 {
     protected $prefix;

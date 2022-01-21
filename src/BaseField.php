@@ -4,11 +4,6 @@ namespace Towa\Acf;
 
 use Towa\Acf\Fields\Helper\AcfWpmlHelper;
 
-/**
- * Class AcfField
- *
- * @package towa\acf
- */
 class BaseField
 {
     private $key;
@@ -18,13 +13,6 @@ class BaseField
     private static $search_keys;
     private $wpml_preference;
 
-    /**
-     * Image constructor.
-     *
-     * @param $prefix
-     * @param $name
-     * @param $label
-     */
     public function __construct($prefix, $name = null, $label = null, $is_search_key = false)
     {
         $this->prefix = $prefix;
@@ -148,7 +136,6 @@ class BaseField
     /**
      * ACFML wpml_cf_preferences. Use the AcfWpmlHelper-Class to assign a value
      *
-     * @return number
      */
     public function set_wpml_translation_preference($value)
     {

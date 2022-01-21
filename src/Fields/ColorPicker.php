@@ -1,9 +1,4 @@
 <?php
-/**
- * Created by TOWA.
- * User: martinwelte
- * Date: 31/10/17
- */
 
 namespace Towa\Acf\Fields;
 
