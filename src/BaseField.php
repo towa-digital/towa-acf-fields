@@ -1,17 +1,9 @@
 <?php
-/**
- * Created by TOWA.
- * User: dseidl
- * Date: 01/08/16
- */
 
 namespace Towa\Acf;
 
-/**
- * Class AcfField
- *
- * @package towa\acf
- */
+use Towa\Acf\Fields\Helper\AcfWpmlHelper;
+
 class BaseField
 {
     private $key;
@@ -19,14 +11,8 @@ class BaseField
     protected $name;
     protected $label;
     private static $search_keys;
+    private $wpml_preference;
 
-    /**
-     * Image constructor.
-     *
-     * @param $prefix
-     * @param $name
-     * @param $label
-     */
     public function __construct($prefix, $name = null, $label = null, $is_search_key = false)
     {
         $this->prefix = $prefix;
@@ -41,7 +27,7 @@ class BaseField
 
     /**
      * $parameter to override
-
+     *
      * @param array  $parameter
      *
      * @return array
@@ -53,9 +39,10 @@ class BaseField
             'label' => $this->get_label(),
             'name'  => $this->get_name(),
             'type'  => $this->type,
+            'wpml_cf_preferences' => $this->get_wpml_translation_preference(),
         ];
 
-        return array_merge((array) $defaults, (array) $parameter);
+        return array_merge($defaults, $parameter);
     }
 
 
@@ -118,8 +105,6 @@ class BaseField
      */
     private function add_as_search_key()
     {
-
-        //init
         if (empty(self::$search_keys)) {
             self::$search_keys = [];
         }
@@ -138,5 +123,22 @@ class BaseField
     public static function get_search_keys()
     {
         return self::$search_keys;
+    }
+
+    /**
+     * @return number
+     */
+    public function get_wpml_translation_preference()
+    {
+        return $this->wpml_preference ? $this->wpml_preference : AcfWpmlHelper::TRANSLATE;
+    }
+
+    /**
+     * ACFML wpml_cf_preferences. Use the AcfWpmlHelper-Class to assign a value
+     *
+     */
+    public function set_wpml_translation_preference($value)
+    {
+        $this->wpml_preference = $value;
     }
 }

@@ -1,23 +1,12 @@
 <?php
-/**
- * Created by TOWA.
- * User: dseidl
- * Date: 02/08/16
- *
- * UPDATE: 25/08/16
- * User: patrick
- * COMMENT: added parent class
- */
 
 namespace Towa\Acf\Modules;
 
 use Towa\Acf\BaseField;
+use Towa\Acf\Fields\PageLink;
+use Towa\Acf\Fields\Select;
+use Towa\Acf\Fields\Url;
 
-/**
- * Class PageOrUrl
- *
- * @package towa\acf\fields
- */
 class PageOrUrl extends BaseField
 {
     protected $prefix;
@@ -33,16 +22,16 @@ class PageOrUrl extends BaseField
      */
     public function build($name_key = '', $label = '', array $parameter = [])
     {
-        $selection = new Select($this->get_name());
+        $selection = new Select($this->get_name(), 'link_type', 'Url oder Seite');
 
-        $fieldGroup = [
-            $selection->build('link_type', 'Url oder Seite', [
+        return [
+            $selection->build([
                 'choices' => [
                     'useLink' => __('Verwende einen Link', 'towa_translation'),
                     'useUrl'  => __('Verwende eine Url', 'towa_translation'),
                 ],
             ]),
-            ( new PageLink($this->get_name()) )->build('link', null, [
+            (new PageLink($this->get_name(), 'pagelink', 'Seite'))->build([
                 'conditional_logic' => [
                     [
                         [
@@ -53,7 +42,7 @@ class PageOrUrl extends BaseField
                     ],
                 ],
             ]),
-            ( new Url($this->get_name()) )->build('link', null, [
+            (new Url($this->get_name(), 'link', 'Link'))->build([
                 'conditional_logic' => [
                     [
                         [
@@ -65,8 +54,5 @@ class PageOrUrl extends BaseField
                 ],
             ]),
         ];
-
-        //TODO return is not correct!!
-        return $fieldGroup;
     }
 }
