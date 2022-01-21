@@ -1,14 +1,4 @@
 <?php
-/**
- * Created by TOWA.
- * User: dseidl
- * Date: 02/08/16
- *
- * UPDATE: 25/08/16
- * User: patrick
- * COMMENT: added parent class
- *
- */
 
 namespace Towa\Acf\Fields;
 

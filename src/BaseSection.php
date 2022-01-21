@@ -1,11 +1,7 @@
 <?php
+
 namespace Towa\Acf;
 
-/**
- * Class FlexibleComponent Parent Class
- *
- * @package Towa\Acf
- */
 abstract class BaseSection
 {
     private $key;
