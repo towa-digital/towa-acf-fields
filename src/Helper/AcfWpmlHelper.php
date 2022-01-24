@@ -1,6 +1,6 @@
 <?php
 
-namespace Towa\Acf\Fields\Helper;
+namespace Towa\Acf\Helper;
 
 abstract class AcfWpmlHelper
 {

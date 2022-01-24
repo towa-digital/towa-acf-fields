@@ -2,7 +2,7 @@
 
 namespace Towa\Acf;
 
-use Towa\Acf\Fields\Helper\AcfWpmlHelper;
+use Towa\Acf\Helper\AcfWpmlHelper;
 
 class BaseField
 {
