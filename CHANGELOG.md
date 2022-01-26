@@ -1,5 +1,11 @@
 # Changelog
 
+## [unreleased]
+
+## Fixed
+
+- namespace of AcfWpmlHelper.php
+
 ## [v2.0.0] - [Release Notes](./docs/release-notes/v2.0.0.md) - 21.01.2022
 
 ### Added
