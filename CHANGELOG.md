@@ -1,6 +1,6 @@
 # Changelog
 
-## [unreleased]
+## [v2.0.1] - 26.02.2022
 
 ## Fixed
 
@@ -48,6 +48,7 @@
 
 - from bitbucket to github ( going opensource :muscle: :heart_eyes: )
 
+[v2.0.1]: https://github.com/towa-digital/towa-acf-fields/releases/tag/v2.0.1
 [v2.0.0]: https://github.com/towa-digital/towa-acf-fields/releases/tag/v2.0.0
 [v1.1.1]: https://github.com/towa-digital/towa-acf-fields/releases/tag/v1.1.1
 [v1.1.0]: https://github.com/towa-digital/towa-acf-fields/releases/tag/v1.1.0
