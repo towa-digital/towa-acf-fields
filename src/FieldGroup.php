@@ -71,7 +71,7 @@ class FieldGroup
         return $this;
     }
 
-    public function for_location( $rule )
+    public function for_location($rule)
     {
         $this->data[ 'location' ][] = $rule;
 
