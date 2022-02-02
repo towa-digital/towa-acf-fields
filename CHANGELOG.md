@@ -1,5 +1,12 @@
 # Changelog
 
+## [unreleased]
+
+### Added
+
+- `TimePicker`-field for ACF
+- `Checkbox`-field for ACF
+
 ## [v2.0.1] - 26.02.2022
 
 ## Fixed
