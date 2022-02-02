@@ -3,9 +3,9 @@
 namespace Towa\Acf\Modules;
 
 use Towa\Acf\BaseField;
-use Towa\Acf\Fields\PageLink;
-use Towa\Acf\Fields\Select;
 use Towa\Acf\Fields\Url;
+use Towa\Acf\Fields\Select;
+use Towa\Acf\Fields\PageLink;
 
 class PageOrUrl extends BaseField
 {
