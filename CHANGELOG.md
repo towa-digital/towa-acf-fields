@@ -1,5 +1,11 @@
 # Changelog
 
+## [v2.2.0] - 17.02.2022
+
+### Added
+
+- `FlexibleContent` field
+
 ## [v2.1.0] - 02.02.2022
 
 ### Added
@@ -55,6 +61,7 @@
 
 - from bitbucket to github ( going opensource :muscle: :heart_eyes: )
 
+[v2.2.0]: https://github.com/towa-digital/towa-acf-fields/releases/tag/v2.2.0
 [v2.1.0]: https://github.com/towa-digital/towa-acf-fields/releases/tag/v2.1.0
 [v2.0.1]: https://github.com/towa-digital/towa-acf-fields/releases/tag/v2.0.1
 [v2.0.0]: https://github.com/towa-digital/towa-acf-fields/releases/tag/v2.0.0
