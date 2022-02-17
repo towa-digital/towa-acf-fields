@@ -1,5 +1,11 @@
 # Changelog
 
+## [unreleased]
+
+### Added
+
+- `FlexibleContent` field
+
 ## [v2.1.0] - 02.02.2022
 
 ### Added
